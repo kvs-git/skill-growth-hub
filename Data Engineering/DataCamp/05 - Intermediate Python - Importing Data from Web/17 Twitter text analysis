@@ -1,0 +1,24 @@
+import re
+
+# define the function word_in_text(), which will tell you whether the first argument (a word) occurs within the 2nd argument (a tweet).
+def word_in_text(word, text):
+    word = word.lower()
+    text = text.lower()
+    match = re.search(word, text)
+
+    if match:
+        return True
+    return False
+
+# Iterate over the rows of the DataFrame and calculate/count how many tweets contain each of keywords 'clinton', 'trump', 'sanders' and 'cruz'
+
+# But First Lets Initialize list to store tweet counts. The list of objects for each candidate has been initialized to 0.
+[clinton, trump, sanders, cruz] = [0, 0, 0, 0]
+
+# Iterate through df, counting the number of tweets in which
+# each candidate is mentioned
+for index, row in df.iterrows():
+    clinton += word_in_text('clinton', row['text'])
+    trump += word_in_text('trump', row['text'])
+    sanders += word_in_text('sanders', row['text'])
+    cruz += word_in_text('cruz', row['text'])
