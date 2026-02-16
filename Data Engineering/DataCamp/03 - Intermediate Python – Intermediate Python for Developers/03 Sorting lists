@@ -1,0 +1,23 @@
+# Sorting lists
+
+# Background:
+# Your food delivery platform is expanding as new restaurants join daily. You have a restaurants list with restaurant names and a cooking_times list showing average meal preparation times in minutes. 
+# Your team needs both lists sorted to identify top-performing restaurants and improve delivery logistics..
+
+
+# Excercises
+# Sort restaurants alphabetically, saving as restaurants_sorted.
+# Sort cooking_times from fastest to slowest, saving as cooking_times_sorted.
+
+
+restaurants = ["Sushi Central", "Burger Hub", "Taco Town", "Pizza Palace"]
+cooking_times = [30, 25, 35, 40, 28, 32, 29, 31, 12, 55]
+
+# Sort restaurant names alphabetically
+restaurants_sorted = sorted(restaurants)
+
+# Sort cooking times from fastest to slowest
+cooking_times_sorted = sorted(cooking_times)
+
+print("Restaurants (A–Z):", restaurants_sorted)
+print("Cooking times (ascending):", cooking_times_sorted)

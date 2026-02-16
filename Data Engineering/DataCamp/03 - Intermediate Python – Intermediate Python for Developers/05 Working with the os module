@@ -1,0 +1,21 @@
+# Working with the os module
+
+# Background:
+# The os module lets you interact with your operating system - navigating directories, checking environment settings, and managing files.
+# Understanding your current working directory and environment variables is essential for debugging file access issues.
+
+
+# Excercises
+# Import the os module.
+# Get the current working directory.
+# Check the environment variables.
+
+
+# Import the os module
+import os
+
+# Get the current working directory
+print("Current working directory:", os.getcwd())
+
+# Check the environment variables
+print("Environment variables:", os.environ)

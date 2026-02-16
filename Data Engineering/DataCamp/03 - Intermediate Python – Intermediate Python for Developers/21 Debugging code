@@ -1,0 +1,19 @@
+# Debugging code
+
+# Background:
+# Developers will inevitably produce errors when writing code; this is completely normal. 
+# The ability to read error messages and debug or fix your code is a crucial skill when building or maintaining software.
+# In this exercise, you have been provided with code that produces errors and will need to identify the cause so that you can resolve these issues.
+
+
+
+# Excercises:
+# Fix the code provided so that it creates and then prints the sales list without any errors.
+
+
+
+# Define the sales list
+sales = [125.97, 84.32, 99.78, 154.21, 78.50, 83.67, 111.13]
+
+# Print the sales list
+print(sales)

@@ -1,0 +1,25 @@
+# Single-line docstrings
+
+# Background:
+# Docstrings are used to explain the purpose of a function. 
+# While the function name should be descriptive, this needs to be balanced with the length of the function name, so docstrings allow you to provide more detail.
+# In this exercise, you'll take the previously created calculate_discount() function and add a single-line docstring.
+
+
+# Excercises:
+# Add a docstring stating """Calculate the discounted price of a product.""".
+# Access the function's docstring using the appropriate attribute.
+
+
+def calculate_discount(price, discount_percent=15, round_result=True):
+    # Add a single-line docstring
+    """Calculate the discounted price of a product."""
+    
+    discounted_price = price - (price * (discount_percent / 100))
+    if round_result == True:
+        return round(discounted_price, 2)
+    else:
+        return discounted_price
+
+# Access the docstring
+print(calculate_discount.__doc__)

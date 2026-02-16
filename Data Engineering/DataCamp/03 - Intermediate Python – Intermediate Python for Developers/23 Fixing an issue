@@ -1,0 +1,20 @@
+# Fixing an issue
+
+# Background:
+# You know where the error occurred in this code, but what should you do to fix it? The requests module has been imported for you to use. 
+# As a developer, you'll often use the requests module to get data from websites.
+
+
+# Excercises
+# Run the following code in the console to check the error: 
+# requests.get(url="https://app.datacamp.com", content=True)
+
+
+Option A: Change the value provided to the content argument to False
+Option B: Remove the content argument
+Option C: Change the value provided to the content argument to a string
+
+
+
+
+Answer: Option B: Remove the content argument

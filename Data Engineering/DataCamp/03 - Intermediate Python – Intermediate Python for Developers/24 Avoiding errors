@@ -1,0 +1,21 @@
+# Avoiding errors
+
+# Background:
+# There are couple of approaches for error handling that can be applied to custom functions.
+# In this exercise, you'll test out one of the approaches that avoids raising an error, printing a helpful message if an error occurs, but not terminating the script.
+
+
+# Excercises
+# Use a keyword allowing you to attempt to run code that cleans text.
+# Use another keyword that prints a helpful message if an error occurs when calling the clean_text() function.
+
+
+def clean_text(text):
+  # Attempt to clean the text
+  try:
+    return text.replace(" ", "_").lower()
+  # Run this code if an error occurs
+  except:
+    print("The clean_text() function expects a string as an argument, please check the data type provided!")
+    
+clean_text(187)

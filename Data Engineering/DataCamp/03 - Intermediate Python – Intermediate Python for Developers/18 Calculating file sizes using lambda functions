@@ -1,0 +1,22 @@
+# Calculating file sizes using lambda functions
+
+# Background:
+# Lambda functions are handy for quickly creating short, one-line functions that can be used immediately without the need for formal def definitions.
+# In this exercise, you'll work with a lambda function that calculates the total file size including extra space needed for file information. extra_space is calculated as a percent of file_size.
+
+
+
+# Excercises:
+# Define the calculate_total lambda that adds the extra_space to the base file size.
+# Call calculate_total() on the file_size variable.
+
+
+
+file_size = 2500
+extra_space = 0.15
+
+# Define a lambda function
+calculate_total = lambda x: x * (1 + extra_space)
+
+# Call the lambda function
+print(calculate_total(file_size))

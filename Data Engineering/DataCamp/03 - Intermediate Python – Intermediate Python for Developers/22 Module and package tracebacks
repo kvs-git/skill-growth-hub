@@ -1,0 +1,18 @@
+# Module and package tracebacks
+
+# Background:
+# When using functions from modules and packages, code from downloaded files will be run in the background.
+# Take a look at the image file '22 Module and package tracebacks'. 
+
+
+# Excercises
+# If this code produces an error, the traceback will mention the name of the file in which the error occurred. 
+# Running this code produces the following error. In what file does the error occur?
+Option A: base.py
+Option B: requests.py
+Option C: api.py
+
+
+
+
+Answer: Option C: api.py

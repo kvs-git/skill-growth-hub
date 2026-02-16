@@ -1,0 +1,24 @@
+# Multi-line docstrings
+
+# Background:
+# Sometimes single-line docstrings are sufficient, but if your function is more complex or has several arguments, then it is generally a better choice to include a multi-line docstring.
+# You'll practice this by creating a multi-line docstring for the clean_text() function you made earlier.
+
+
+
+# Excercises:
+# Add the following summary to the docstring: Clean text by swapping spaces to underscores and converting to lowercase..
+
+
+
+def clean_text(text, lower=True):
+    # Add a multi-line docstring
+    """
+    Clean text by swapping spaces to underscores and converting to lowercase.
+    
+    """
+    clean_text = text.replace(' ', '_')
+    if lower == False:
+        return clean_text
+    else:
+        return clean_text.lower()

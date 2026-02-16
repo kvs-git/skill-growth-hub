@@ -1,0 +1,22 @@
+# Reading files with pandas
+
+# Background:
+# In real-world projects, data lives in files, not dictionaries. 
+# Whether you're building an e-commerce platform, implementing analytics dashboards, or debugging transaction issues, quickly loading and inspecting your data is the critical first step.
+# pandas makes this effortless - you can load files and immediately check column types, memory usage, and missing values, helping you catch data quality issues early.
+# A sales.csv file with user IDs, dates, and order values columns has been loaded for you.
+
+# Excercises:
+# Read in "sales.csv", saving as sales_df.
+# Display the DataFrame info.
+
+
+# Import pandas
+import pandas as pd
+
+# Read in sales.csv
+sales_df = pd.read_csv("sales.csv")
+
+# Display the DataFrame info
+print("--- DataFrame Info ---")
+print(sales_df.info())

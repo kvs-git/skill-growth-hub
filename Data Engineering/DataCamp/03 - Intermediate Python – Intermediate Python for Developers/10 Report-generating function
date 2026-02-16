@@ -1,0 +1,30 @@
+# Report-generating function
+
+# Background:
+# You learned that functions can return values, but they can also print results.
+# Your development team needs regular reports on test execution times. 
+# Instead of manually calculating these metrics each time, you'll create a custom function called test_report that prints a formatted summary without returning any values.
+# A test_durations list with test execution times in seconds is provided for you.
+
+
+# Excercises:
+# Complete the function definition by adding durations as the argument.
+# Calculate the total test time by using a built-in function on the durations.
+# Generate the report for recent tests by calling the function on the test_durations list.
+
+
+test_durations = [245.50, 189.99, 312.75, 156.20, 428.90, 201.35, 167.80]
+
+ # Complete the function
+def test_report(durations):
+    num_tests = len(durations)
+    
+    # Calculate total test time
+    total_time = sum(durations)
+    
+    print("=== Test Report ===")
+    print("Total Tests: ", num_tests)
+    print("Total Execution Time (s): ", total_time)
+
+# Generate the report for recent test runs
+print(test_report(test_durations))

@@ -1,0 +1,28 @@
+# Arbitrary keyword arguments
+
+# Background:
+# Arbitrary positional arguments are one way to add flexibility when creating custom functions, but you can also use arbitrary keyword arguments.
+# Your goal is to take the concat function that you created in the last exercise and modify it to accept arbitrary keyword arguments.
+
+
+
+# Excercises:
+# Define concat() as a function that accepts arbitrary keyword arguments called kwargs.
+# Inside the function, loop over the keyword argument's values, using kwarg as the iterator.
+# Call concat() with keyword arguments of start equal to "Python", middle equal to "is", and end equal to "great!".
+
+
+
+# Define a function called concat
+def concat(**kwargs):
+  """Concatenates keyword arguments into a single string with spaces."""
+  
+  result = ""
+  
+  # Iterate over the Python kwargs
+  for kwarg in kwargs.values():
+    result += " " + kwarg
+  return result
+
+# Call the function
+print(concat(start="Python", middle="is", end="great!"))

@@ -1,0 +1,22 @@
+# Lambda functions with iterables
+
+# Background:
+# You've used lambda functions on single values - now let's apply them to entire lists! This is where lambda functions really shine: when you need the same operation on every item.
+# In this task, you'll process a list of colleague names using a lambda function applied to the entire list.
+
+
+
+# Excercises:
+# Apply the lambda function to each value in the colleagues list, saving as cleaned.
+# Convert the map object to a list, saving as cleaned_list.
+
+
+
+colleagues = ["Sarah Martinez", "Michael Chen", "Emily Brown"]
+
+# Apply the lambda function to each colleague's name
+cleaned = map(lambda x: x.replace(" ", "_").lower(), colleagues)
+
+# Convert map object to list
+cleaned_list = list(cleaned)
+print(cleaned_list)

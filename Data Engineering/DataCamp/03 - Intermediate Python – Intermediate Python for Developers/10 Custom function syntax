@@ -1,0 +1,24 @@
+# Custom function syntax
+
+# Background:
+# As part of the IT support team, you frequently need to convert employee names into their company email addresses. 
+# The company follows a standard email format: first name (lowercase) + dot + last name (lowercase) + @techcompany.com. For example, "Jane Doe" becomes jane.doe@techcompany.com.
+
+# Excercises:
+# Define a function called generate_email that takes one argument called full_name.
+# Return the generated email from the function.
+# Call the function on the full_name string.
+
+
+full_name = "Alan Turing"
+
+# Define the generate_email function
+def generate_email(full_name):
+    name_parts = full_name.split()
+    email = name_parts[0].lower() + '.' + name_parts[1].lower() + '@techcompany.com'
+    
+    # Return the email address
+    return email
+
+# Call the function on the full_name string
+print(generate_email(full_name))

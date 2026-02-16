@@ -1,0 +1,26 @@
+# Calculating key metrics (Min-Max-Sum)
+
+# Background:
+# As a developer for a food delivery platform, you might need to calculate important metrics for your business. 
+# You have access to recent_orders, a list containing order amounts from the past hour during peak traffic.
+# While you can manually calculate metrics, Python's built-in functions provide efficient and faster solutions.
+
+# Excercises
+# Find the smallest order amount, saving as smallest_order.
+# Find the largest order amount, saving as largest_order.
+# Calculate the total revenue, saving as total_revenue.
+
+recent_orders = [15.99, 28.50, 42.75, 18.99, 55.00, 31.25, 22.99, 67.50]
+
+# Find the smallest order amount
+smallest_order = min(recent_orders)
+
+# Find the largest order amount
+largest_order = max(recent_orders)
+
+# Calculate total revenue from all orders
+total_revenue = sum(recent_orders)
+
+print("Smallest order:", smallest_order)
+print("Largest order:", largest_order)
+print("Total revenue:", total_revenue)

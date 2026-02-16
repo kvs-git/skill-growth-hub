@@ -1,0 +1,25 @@
+# What is a module
+
+# Background:
+# Take a look at the screenshot. Instead Screenshot, please review the following code
+
+# Import the os module 
+import os 
+
+# Check the type of os 
+print ("The type of os is: " type(os)) 
+
+# Display the documentation 
+print (help (os)) 
+
+
+# Excercises
+# Can you identify which of the following definitions accurately describes a module?
+Option A: Reusable code that can be imported into other programs
+Option B: A predefined operation that performs a specific task
+Option C: A file containing code that runs from start to finish
+
+
+
+
+Answer: Reusable code that can be imported into other programs

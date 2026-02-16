@@ -1,0 +1,29 @@
+# Adding arbitrary arguments
+
+# Background:
+# Python allows custom functions to accept any number of positional arguments through the use of "Arbitrary arguments". 
+# This flexibility enables functions to be used in a variety of ways while still producing the expected results.
+# Using this power, you'll build a function that concatenates (joins together) strings, regardless of how many blocks of text are provided!
+
+
+
+# Excercises:
+# Define a function called concat() that accepts arbitrary arguments called args.
+# Use a for loop to iterate over each arg in args.
+# Call the function to test that it works correctly.
+
+
+
+# Define a function called concat
+def concat(*args):
+  """Concatenates multiple string arguments with spaces between them."""
+
+  result = ""
+
+  # Iterate over the Python args tuple
+  for arg in args:
+    result += " " + arg
+  return result
+
+# Call the function
+print(concat("Python", "is", "great!"))

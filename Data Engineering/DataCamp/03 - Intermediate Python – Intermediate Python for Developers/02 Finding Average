@@ -1,0 +1,21 @@
+# Finding the average
+
+# Background:
+# Your next task is to check delivery times during peak dinner hours (6-9 PM) for a restaurant to optimize platform performance. 
+# You have a delivery_times list containing delivery times in minutes.
+# Let's use the built-in functions to calculate the average delivery time.
+
+
+# Excercises
+# Find the average delivery time, saving as average_time.
+# Round the average_time to two decimal places, saving as average_rounded.
+
+delivery_times = [19, 25, 35, 40, 28, 32, 29, 31]
+
+# Find the average delivery time
+average_time = sum(delivery_times) / len(delivery_times)
+
+# Round the average delivery time to two decimal places
+average_rounded = round(average_time, 2)
+
+print("Average delivery time:", average_rounded)

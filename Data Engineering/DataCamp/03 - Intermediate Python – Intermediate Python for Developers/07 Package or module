@@ -1,0 +1,25 @@
+# Package or module
+
+# Background:
+# Packages and modules are both essential parts of Python's ecosystem, helping you avoid rewriting existing code.
+# The key difference: modules are built-in and only need importing, while packages must be installed before use.
+# Take a look at the screenshot. Instead Screenshot, please review the following code
+
+# Import all the libraries
+import string 
+import pandas as pd
+
+# Check the documentation for string
+print (help(string)) 
+
+
+# Excercises
+# Can you identify which of the following definitions accurately describes a module?
+Option A: Line 2
+Option B: Line 3
+Option C: Line 6
+
+
+
+
+Answer: Option B: Line 3

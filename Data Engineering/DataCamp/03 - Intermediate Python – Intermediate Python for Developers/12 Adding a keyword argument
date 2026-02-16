@@ -1,0 +1,28 @@
+# Adding a keyword argument
+
+# Background:
+# Keyword arguments are particularly useful in text processing functions because they allow you to specify optional transformations while keeping the function call readable. 
+# By using default arguments, you can define the most common behavior (like converting to lowercase) while still allowing users to override it when needed.
+# In this exercise, you will create a clean_text() function that replaces spaces with underscores and optionally converts text to lowercase.
+
+
+
+# Excercises:
+# Define the clean_text() function with parameters text and lower (with a default value of True).
+# Inside the else block, apply the lowercase transformation.
+# Call the clean_text() function with product as the argument to test the default behavior.
+
+
+product = 'Wireless Mouse'
+
+# Define clean_text function
+def clean_text(text, lower=True):
+    clean_text = text.replace(' ', '_')
+    if lower == False:
+        return clean_text
+    else:
+        # Apply lowercase transformation
+        return clean_text.lower()
+
+# Test with default behavior
+print(clean_text(product))

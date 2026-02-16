@@ -1,0 +1,18 @@
+# Calling lambda in-line
+
+# Background:
+# Remember, one of the key benefits of lambda is the ability to use functions in-line.
+# In this exercise, you'll modify the approach of the previous exercise to calculate the total file size in-line without storing a lambda function as a variable first.
+
+
+
+# Excercises:
+# In a single line of code, make a lambda function that multiplies file_size by 1 + extra_space and returns the results.
+
+
+
+file_size = 2500
+extra_space = 0.15
+
+# Call a lambda function in one line
+print((lambda x: x * (1 + extra_space))(file_size))
