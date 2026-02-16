@@ -1,0 +1,12 @@
+# Working with sets
+
+# Convert the all_ingredients list to a set called unique_ingredients to remove duplicates.
+# Sort the unique_ingredients to show the items listed alphabetically.
+
+
+# Convert the all_ingredients list to a set
+unique_ingredients = set(all_ingredients)
+print(unique_ingredients)
+
+# Sort unique_ingredients alphabetically
+print(sorted(unique_ingredients))

@@ -1,0 +1,10 @@
+# Checking data types
+
+# Print the data type of the olive_oil_tbsp variable.
+# Print the data type of the has_pasta variable.
+
+# Check the data type of olive_oil_tbsp
+print(type(olive_oil_tbsp))
+
+# Check the data type of has_pasta
+print(type(has_pasta))

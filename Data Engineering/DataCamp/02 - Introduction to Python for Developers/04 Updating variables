@@ -1,0 +1,16 @@
+# Updating variables
+
+# Update the pasta_type variable to store the string "fusilli" instead of its current value.
+# Update the quantity variable to store the integer 100 instead.
+
+print(pasta_type)
+print(quantity)
+
+# Update the pasta type to fusilli
+pasta_type = "fusilli"
+
+# Update the quantity to 100
+quantity = 100
+
+print(pasta_type)
+print(quantity)

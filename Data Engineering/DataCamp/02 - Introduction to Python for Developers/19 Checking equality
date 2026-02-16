@@ -1,0 +1,10 @@
+# Checking equality
+
+# Use an equality check to compare basil_grams with required_basil in the if statement condition.
+# Else, print a message when you don't have the exact amount needed.
+
+# Check if you have exactly the right amount of basil
+if basil_grams == required_basil:
+    print('Perfect! You have exactly the right amount of basil.')
+else:
+    print('You need to adjust your basil quantity.')

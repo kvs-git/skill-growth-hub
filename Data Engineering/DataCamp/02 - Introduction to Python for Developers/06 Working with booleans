@@ -1,0 +1,13 @@
+# Working with booleans
+
+# Create a boolean variable called has_pasta and set it to True to indicate you already have pasta at home.
+# Create a boolean variable called has_garlic and set it to False to indicate you need to buy garlic.
+
+# Track if you have pasta at home
+has_pasta = True
+
+# Track if you have garlic
+has_garlic = False
+
+print(has_pasta)
+print(has_garlic)

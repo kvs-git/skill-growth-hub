@@ -1,0 +1,10 @@
+# Creating a tuple
+
+# Create a tuple called cup_conversion that stores the values 1 and 240.
+# Check the type of cup_conversion.
+
+# Create a tuple
+cup_conversion = (1,240)
+
+# Check the type
+print(type(cup_conversion))

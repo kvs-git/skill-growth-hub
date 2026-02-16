@@ -1,0 +1,15 @@
+# Checking values in a list using for loop
+
+# Create a variable called items_to_buy starting at 0, then increment it by 1 for each ingredient in your shopping_list.
+# Print both the shopping_list and the total number of items_to_buy.
+
+
+# Count how many items to buy
+items_to_buy = 0
+
+for item in shopping_list:
+    items_to_buy +=1
+
+# Display results
+print(shopping_list)
+print(items_to_buy)

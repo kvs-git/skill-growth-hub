@@ -1,0 +1,17 @@
+# Building a dictionary
+
+# Create a dictionary called recipe with "olive_oil" as the first key and 30 as its value.
+# Add "garlic" as a key with a value of 15.
+# Add "tomatoes" with a value of 400.
+
+ingredients = ["fusilli", "tomatoes", "garlic", "basil", "olive oil", "salt"]
+quantities = [500, 400, 15, 20, 30, 10]
+
+# Create the recipe dictionary
+recipe = {"olive_oil":30, 
+# Add garlic
+          "garlic": 15,
+# Add tomatoes
+          "tomatoes": 400}
+
+print(recipe)

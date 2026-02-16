@@ -1,0 +1,18 @@
+# Working with number variables
+
+# Store the number of garlic cloves (3) as an integer variable called garlic_cloves.
+# Store the amount of olive oil in tablespoons (2.5) as a float variable called olive_oil_tbsp.
+# Increase the amount of olive oil by 1 tablespoon and store it to new_olive_oil_tbsp.
+
+# Store the number of garlic cloves as an integer
+garlic_cloves = 3
+
+# Store the olive oil amount as a float
+olive_oil_tbsp = 2.5
+print(olive_oil_tbsp)
+
+# Increase the olive oil amount
+new_olive_oil_tbsp = 2.5 +1
+
+print(garlic_cloves)
+print(new_olive_oil_tbsp)

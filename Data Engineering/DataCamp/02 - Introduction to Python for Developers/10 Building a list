@@ -1,0 +1,14 @@
+# Building a list
+
+# Create a list called ingredients containing the following strings: "fusilli", "tomatoes", "garlic", "basil", "olive oil", and "salt", in that order.
+# Create a list called quantities containing the following numbers: 500, 400, 15, 20, 30, and 10, in that order.
+
+# Create a list of ingredients
+ingredients = ["fusilli", "tomatoes", "garlic", "basil", "olive oil", "salt"]
+
+# Create a list of ingredient quantities
+quantities = [500, 400, 15, 20, 30, 10]
+
+print(ingredients)
+
+print(quantities)

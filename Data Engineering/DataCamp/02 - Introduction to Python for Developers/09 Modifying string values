@@ -1,0 +1,19 @@
+# Modifying string values
+
+# Use the .replace() method to update pasta_type by changing "pasta" to "fusilli pasta".
+# Convert the ingredient_one variable to lowercase using the .lower() method.
+
+pasta_type = "pasta"
+
+# Update pasta type to be more specific
+pasta_type = pasta_type.replace("pasta","fusilli pasta")
+
+ingredient_one = "BASIL"
+
+# Standardize ingredient_one to lowercase
+ingredient_one = ingredient_one.lower()
+
+print(pasta_type)
+print(ingredient_one)
+
+print(cooking_instructions)

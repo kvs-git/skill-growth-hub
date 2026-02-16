@@ -1,0 +1,14 @@
+# Write an if-elif statement
+
+# Write an if statement to check if pantry_stock["tomatoes"] is greater than or equal to ingredients_needed["tomatoes"]. 
+# If true, print "Enough tomatoes for the party!".
+# If the first condition is false, check if pantry_stock["tomatoes"] is greater than or equal to 800.
+
+
+# Check if you have enough tomatoes for the full party
+if pantry_stock["tomatoes"] >= ingredients_needed["tomatoes"]:
+    print("Enough tomatoes for the party!")
+
+# Check if you have enough for a smaller gathering
+elif pantry_stock["tomatoes"] >= 800:
+    print("Only enough tomatoes for a smaller gathering.")

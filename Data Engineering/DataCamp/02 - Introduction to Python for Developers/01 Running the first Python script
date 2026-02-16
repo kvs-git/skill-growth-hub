@@ -1,0 +1,9 @@
+# To build our first ever Python project as a developer, we need to verify that Python is installed and everything is working correctly.
+# To do this, we may use the print() function to display a message. 
+
+# Your first print function
+print("Hello, world!")
+
+Writing our first Python script
+# Fill in the print function
+print("Welcome to the recipe scaler")
