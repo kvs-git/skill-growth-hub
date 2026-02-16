@@ -1,0 +1,21 @@
+# Returning errors
+
+# Background:
+# Time to try out the other approach for error handling.
+# Revise the clean_text() function to intentionally produce an error if an incorrect data type is used.
+
+
+# Excercises
+# Check whether the data type of the text argument is a string str.
+# Inside the else block, produce a TypeError() to prevent the script from running and return a descriptive message.
+
+
+def clean_text(text):
+  # Check the data type
+  if type(text) == str:
+    return text.replace(" ", "_").lower()
+  else:
+    # Return a TypeError error if the wrong data type was used
+    raise TypeError("The clean_text() function expects a string as an argument, please check the data type provided!")
+    
+clean_text("User Name 187")
