@@ -1,0 +1,23 @@
+# Loading .mat files
+
+# Background:
+# You'll figure out how to load a MATLAB file using scipy.io.loadmat().
+# The file 'albeck_gene_expression.mat' is in your working directory. 
+
+
+
+# Excercises:
+# Import the package scipy.io.
+# Load the file 'albeck_gene_expression.mat' into the variable mat; do so using the function scipy.io.loadmat().
+# Use the function type() to print the datatype of mat to the shell.
+
+
+# Import package
+import scipy.io
+
+# Load MATLAB file: mat
+mat = scipy.io.loadmat('albeck_gene_expression.mat')
+
+# Print the datatype type of mat
+print(type(mat))
+

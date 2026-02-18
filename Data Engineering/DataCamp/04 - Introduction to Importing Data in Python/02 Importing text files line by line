@@ -1,0 +1,20 @@
+# Importing text files line by line
+
+# Background:
+# For large files, we may not want to print all of their content to the shell: you may wish to print only the first few lines. 
+# Enter the .readline() method, which allows you to do this. 
+# When a file called file is open, you can print out the first line by executing file.readline(). 
+# If you execute the same command again, the second line will print, and so on.
+# Let's use the concept of a context manager to bind a variable file by using a context manager construct: with open('filename') as file:
+# While still within this construct, the variable file will be bound to open('filename'); thus, to print the file to the shell, all the code you need to execute is: 
+
+# Excercises:
+# Open moby_dick.txt using the with context manager and the variable file.
+# Print the first three lines of the file to the shell by using .readline() three times within the context manager.
+
+
+# Read & print the first 3 lines
+with open('moby_dick.txt') as file:
+    print(file.readline())
+    print(file.readline())
+    print(file.readline())

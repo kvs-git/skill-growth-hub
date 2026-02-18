@@ -1,0 +1,19 @@
+# Creating a database engine
+
+# Background:
+# You'll create an engine to connect to the SQLite database 'Chinook.sqlite', which is in your working directory.
+# You'll use the 'connection string' to connect the SQLite database. 
+
+
+
+# Excercises:
+# Import the function create_engine from the module sqlalchemy.
+# Create an engine to connect to the SQLite database 'Chinook.sqlite' and assign it to engine.
+
+# Import necessary module
+from sqlalchemy import create_engine
+
+# Create engine: engine
+# Here 'sqlite:///Chinook.sqlite' is called 'connection string'
+engine = create_engine('sqlite:///Chinook.sqlite')
+

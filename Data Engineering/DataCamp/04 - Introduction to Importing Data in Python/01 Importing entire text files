@@ -1,0 +1,18 @@
+# Importing entire text files
+
+# Background:
+# In this exercise, you'll be working with the file moby_dick.txt. It is a text file that contains the opening sentences of Moby Dick, one of the great American novels! 
+# In the video, you've seen you could open such a file using file = open('moby_dick.txt', mode='r'). You could then read from it with file.read() and close the file using file.close(). 
+# However, using context managers allows you to do this more effectively. 
+# In this exercise, you will gain experience opening a text file, printing its contents and, finally, closing it by using a context manager.
+
+
+# Excercises:
+# Open the file moby_dick.txt as read-only using a with statement and bind it to the variable file. Make sure to pass the filename enclosed in quotation marks ''.
+# Print the contents of the file to the shell using the print() function. As Hugo showed in the video, you'll need to apply the method .read() to the object file and print the result.
+
+
+# Open a file as read-only and bind it to file
+with open('moby_dick.txt', 'r') as file:
+  	# Print it
+    print(file.read())
