@@ -1,0 +1,118 @@
+# Summing strings and concatenating numbers
+
+
+###################
+# Background:
+# In the previous exercise, you were able to identify that category is the correct data type for user_type and convert it in order to extract relevant statistical summaries that shed light on the distribution of user_type.
+# Another common data type problem is importing what should be numerical values as strings, as mathematical operations such as summing and multiplication lead to string concatenation, not numerical outputs.
+
+
+
+###################
+# Excercises:
+# In this exercise, you'll be converting the string column duration to the type int. 
+# Before that however, you will need to make sure to strip "minutes" from the column in order to make sure pandas reads it as numerical. 
+# The pandas package has been imported as pd.
+
+
+
+#======================================================================
+
+
+###################
+# Instructions:
+# Use the .strip() method to strip duration of "minutes" and store it in the duration_trim column.
+# Convert duration_trim to int and store it in the duration_time column.
+# Write an assert statement that checks if duration_time's data type is now an int.
+# Print the average ride duration.
+
+###################
+#Programming Code Given:
+
+# Strip duration of minutes
+ride_sharing['duration_trim'] = ride_sharing['duration'].____.____()
+
+# Convert duration to integer
+ride_sharing['duration_time'] = ____
+
+# Write an assert statement making sure of conversion
+assert ride_sharing['____'].____ == '____'
+
+# Print formed columns and calculate average ride duration 
+print(ride_sharing[['duration','duration_trim','duration_time']])
+print(____)
+
+
+###################
+Solutions:
+
+# Strip duration of minutes
+ride_sharing['duration_trim'] = ride_sharing['duration'].str.strip('minutes')
+
+# Convert duration to integer
+ride_sharing['duration_time'] = ride_sharing['duration_trim'].astype('int')
+
+# Write an assert statement making sure of conversion
+assert ride_sharing['duration_time'].dtype == 'int'
+
+# Print formed columns and calculate average ride duration 
+print(ride_sharing[['duration','duration_trim','duration_time']])
+print(ride_sharing['duration_time'].mean())
+
+
+
+###################
+# Output:
+
+# Strip duration of minutes
+ride_sharing['duration_trim'] = ride_sharing['duration'].str.strip('minutes')
+
+# Convert duration to integer
+ride_sharing['duration_time'] = ride_sharing['duration_trim'].astype('int')
+
+# Write an assert statement making sure of conversion
+assert ride_sharing['duration_time'].dtype == 'int'
+
+# Print formed columns and calculate average ride duration 
+print(ride_sharing[['duration','duration_trim','duration_time']])
+print(ride_sharing['duration_time'].mean())
+         duration duration_trim  duration_time
+0      12 minutes           12              12
+1      24 minutes           24              24
+2       8 minutes            8               8
+3       4 minutes            4               4
+4      11 minutes           11              11
+...           ...           ...            ...
+25755  11 minutes           11              11
+25756  10 minutes           10              10
+25757  14 minutes           14              14
+25758  14 minutes           14              14
+25759  29 minutes           29              29
+
+[25760 rows x 3 columns]
+11.389052795031056
+
+
+###################
+# Summary of the Lessons:
+
+# Data type constraints
+# You learned about the importance of cleaning data to ensure the integrity of your analysis in the data science workflow. Specifically, you focused on:
+
+# Data Type Constraints: Understanding that data must be in the correct format for analysis. For example, numerical data represented as strings can lead to incorrect analysis outcomes.
+# Converting Data Types: You practiced converting string data to numerical types using the .astype() method. This is crucial when you need to perform mathematical operations on data initially read as strings.
+# Stripping Unwanted Characters: Using the .str.strip() method to remove unwanted characters from data, such as currency symbols, which allows for the conversion of string data to numerical types.
+# Assert Statements: You learned to use assert statements to verify that your data transformations have been successful. For instance, ensuring that a column's data type has been changed as expected.
+# Here's a snippet from the lesson demonstrating how to clean and convert a duration column from strings to integers:
+
+# Strip duration of minutes
+ride_sharing['duration_trim'] = ride_sharing['duration'].str.strip('minutes') 
+
+# Convert duration to integer
+ride_sharing['duration_time'] = ride_sharing['duration_trim'].astype('int')
+
+# Assert the conversion was successful
+assert ride_sharing['duration_time'].dtype == 'int'
+# This lesson laid the foundation for addressing common data problems, emphasizing the importance of having data in the correct format for analysis.
+
+# The goal of the next lesson is to learn how to apply data range constraints in Python using pandas to ensure the quality of data by correcting out-of-range values.
