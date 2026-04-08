@@ -1,0 +1,56 @@
+# Response codes and APIs
+
+
+# Background:
+# When a client sends a request to a server, the server response includes a numeric status code, which is used to tell the client how the server responded to the request.
+# In this exercise you will learn about the most important status codes you should know. 
+# We will send requests to valid and invalid paths and learn how we can access the status code to determine if our request was successful or not.
+# The requests package comes with a built-in status code lookup object requests.codes you can use when you don't remember the exact numerical values.
+# The requests package has been imported for you.
+
+
+
+
+# Excercises 1:
+# Check if the server responded successfully with the 200 status code.
+
+
+response = requests.get('http://localhost:3000/lyrics')
+
+# Check the response status code
+if (response.status_code == 200):
+  print('The server responded succesfully!')
+
+
+
+
+# Excercises 2:
+# Perform a request to the inexistent /movies path of the music catalog API.
+# Check if the server responded with a status code indicating the resource was not found, providing the appropriate numerical status code representing this.
+
+# Make a request to the movies endpoint of the API
+response = requests.get('http://localhost:3000/movies')
+
+if (response.status_code == 200):
+  print('The server responded succesfully!')
+  
+# Check the response status code
+elif (response.status_code == requests.codes.not_found):
+  print('Oops, that API could not be found!')
+
+
+
+
+# Excercises 3:
+# Check for response codes with a 200 OK and 404 Not found status code using the requests.codes lookup object.
+
+
+response = requests.get('http://localhost:3000/movies')
+
+# Check if the response.status_code is equal to the requests.codes value for "200 OK"
+if (response.status_code == requests.codes.ok):
+  print('The server responded succesfully!')
+  
+# Or if the request was not successful because the API did not exist
+elif (response.status_code == requests.codes.not_found):
+  print('Oops, that API could not be found!')

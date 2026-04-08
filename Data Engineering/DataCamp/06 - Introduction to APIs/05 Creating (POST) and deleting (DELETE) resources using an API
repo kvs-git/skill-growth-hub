@@ -1,0 +1,62 @@
+# Creating and deleting resources using an API
+
+
+# Background:
+# Now that you have learned how to construct a URL, you can send requests to specific API resources. Let's see what more you can do with HTTP verbs on these resources.
+# In this exercise, you will use the playlists API available via http://localhost:3000/playlists/
+# A lot of functionality is available out of the box with requests, which makes your code a lot easier to write and read. 
+# This API offers the following actions:
+	#	Verb		Path							Description
+	#	GET			playlists						get a list of all playlists
+	#	GET			/playlists/{PlaylistId}			get information on a single playlist using it's unique identifier PlaylistId
+	#	POST		/playlists						create a new playlist
+	#	DELETE		/playlists/{PlaylistId}			remove an existing playlist using it's unique identifier PlaylistId
+
+# You will start by getting a list of all existing playlists, then you will learn how to create a new playlist and verify it's creation, and last you will learn how to remove an existing playlist.
+# The requests library is already imported for your convenience.
+
+
+
+
+# Excercises 1:
+# Get a list of all playlists from the playlists API.
+# Get a list of all playlists from the API
+
+
+response = requests.get('http://localhost:3000/playlists')
+print(response.text)
+
+
+
+
+# Excercises 2:
+# Create a dictionary with Name set to Rock Ballads, then perform a POST request with this dictionary as the data parameter.
+# Create a dictionary with the playlist info
+playlist_data = {'Name': 'Rock Ballads'}
+
+# Perform a POST request to the playlists API with your dictionary as data parameter
+response = requests.post('http://localhost:3000/playlists', data=playlist_data)
+print(response.text)
+
+
+
+
+# Excercises 3:
+# Perform a GET request to get information on the playlist with PlaylistId 2.
+
+
+# Perform a GET request to get info on playlist with PlaylistId 2
+response = requests.get('http://localhost:3000/playlists/2')
+print(response.text)
+
+
+# Excercises 4:
+# Perform a DELETE request to the playlist API using the path to playlist with PlaylistId 2
+
+
+# Perform a DELETE request to the playlist API using the path to playlist with PlaylistId 2
+requests.delete('http://localhost:3000/playlists/2')
+
+# Get the list of all existing playlists again
+response = requests.get('http://localhost:3000/playlists')
+print(response.text)

@@ -1,0 +1,48 @@
+# Using request and response headers
+
+
+# Background:
+# Headers contain additional information about your API calls, including the desired or used response format. 
+# Using accept and content-type headers, client and server can negotiate what response format to use.
+# In this exercise, you'll use headers to inspect response formats after making a request and make a new request specifying the desired format via the accept header.
+# The requests package has been imported for your convenience.
+
+
+
+
+# Excercises 1:
+# Find out the content-type of the response by printing out the response content-type header.
+
+
+response = requests.get('http://localhost:3000/lyrics')
+
+response = requests.get('http://localhost:3000/lyrics')
+
+# Print the response content-type header
+print(response.headers['content-type'])
+
+
+
+
+# Excercises 2:
+# Find out what content-types the server can respond with by printing out the response accept header.
+
+response = requests.get('http://localhost:3000/lyrics')
+
+# Print the response accept header
+print(response.headers['Accept'])
+
+
+
+
+# Excercises 3:
+# Add an accept header to the request so the server returns JSON formatted data, then print the response text attribute.
+
+response = requests.get('http://localhost:3000/movies')
+
+# Set the content type to application/json
+headers = {'accept': 'application/json'}
+response = requests.get('http://localhost:3000/lyrics', headers=headers)
+
+# Print the response's text
+print(response.text)
